@@ -1,0 +1,6 @@
+#import "../fragments/orders_fragment.graphql"
+mutation updateOrderDateAndTime($id: ID!, $date: String, $time: String) {
+  updateOrderDateAndTime(id: $id, date: $date, time: $time) {
+    ...Order
+  }
+}

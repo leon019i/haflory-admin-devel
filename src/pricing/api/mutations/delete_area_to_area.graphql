@@ -1,0 +1,3 @@
+mutation deleteAreaTransferPrice($id: ID!) {
+	deleteAreaTransferPrice(id: $id)
+}

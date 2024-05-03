@@ -1,0 +1,7 @@
+mutation updatePolicy($id: ID!, $detailsEn: String, $detailsAr: String ) {
+	updatePolicy(id: $id, input: { detailsEn: $detailsEn , detailsAr: $detailsAr }) {
+		_id
+		detailsEn
+		detailsAr
+	}
+}

@@ -1,0 +1,20 @@
+query getGovernoratePriceList($limit: Int!, $skip: Int!) {
+	getGovernoratePriceList(input: { limit: $limit, skip: $skip }) {
+   governoratePrice{
+      _id
+      from{
+        _id
+        nameEn
+        nameAr
+      }
+      to{
+        _id
+        nameEn
+        nameAr
+      }
+      price
+      commission
+    }
+		totalCount
+	}
+}

@@ -1,0 +1,8 @@
+
+mutation updatePromotion( $id: ID! , $avatar: Upload , $order: Int) {
+	updatePromotion( id : $id, input: { avatar: $avatar, order : $order }) {
+	   _id
+	   order
+       avatar
+	}
+}

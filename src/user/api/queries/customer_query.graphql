@@ -1,0 +1,9 @@
+#import "../fragments/user_fragment.graphql"
+query customers($limit: Int!, $skip: Int!) {
+	customers(input: { limit: $limit, skip: $skip }) {
+			users {
+				...User
+			}
+			totalCount
+	}
+}

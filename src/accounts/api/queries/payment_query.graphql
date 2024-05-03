@@ -1,0 +1,7 @@
+#import "../fragments/payment_fragment.graphql"
+#import "../fragments/user_fragment.graphql"
+query accounts {
+  accounts {
+    ...Account
+  }
+}

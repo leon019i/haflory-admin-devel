@@ -1,0 +1,7 @@
+mutation updateConversionPoint($id: ID!, $amount: Float, $point: Float) {
+	updateConversionPoint(id: $id, input: { amount: $amount, point: $point }) {
+		_id
+		amount
+		point
+	}
+}

@@ -1,0 +1,10 @@
+
+fragment User on User {
+      _id
+      nameEn
+      nameAr
+      phone
+      avatar
+      role
+      active
+}

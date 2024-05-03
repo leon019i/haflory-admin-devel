@@ -1,0 +1,15 @@
+
+#import "../fragments/user_fragment.graphql"
+mutation updateDriver(
+	$id: ID!,
+	 $nameEn: String!, $phone: String!, $avatar: Upload, $active: Boolean 
+) {
+	updateDriver(
+		id: $id,
+		input: {
+			nameEn: $nameEn,  phone: $phone, avatar: $avatar,active :$active
+		}
+	) {
+			...User
+	}
+}

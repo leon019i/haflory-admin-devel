@@ -1,0 +1,16 @@
+#import "../fragments/sub_services_fragment.graphql"
+fragment Service on Service {
+  _id
+  nameEn
+  nameAr
+  descriptionEn
+  descriptionAr
+  order
+  avatar
+  active
+  price
+  commission
+  subServices {
+    ...SubService
+  }
+}

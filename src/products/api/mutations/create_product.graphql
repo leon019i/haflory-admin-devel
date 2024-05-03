@@ -1,0 +1,40 @@
+#import "../fragments/product_fragment.graphql"
+mutation createProduct(
+	$nameEn: String
+	$nameAr: String
+	$descriptionEn: String
+	$descriptionAr: String
+	$subCategory: ID
+	$createdBy: ID
+	$avatar: [Upload]
+	$featured: Boolean
+	$active: Boolean
+	$order: Int
+	$price: Float
+	$quantity: Int
+	$sku: String
+	$variants: [variantInput]
+	$sizeChart: String
+) {
+	createProduct(
+		input: {
+			  nameEn: $nameEn
+	          nameAr: $nameAr
+	          descriptionEn: $descriptionEn
+	          descriptionAr: $descriptionAr
+	          subCategory: $subCategory
+	          createdBy: $createdBy
+	          avatar: $avatar
+	          featured: $featured
+			  order:$order
+	          active: $active
+	          price: $price
+	          quantity: $quantity
+	          sku: $sku
+	          variants: $variants
+	          sizeChart: $sizeChart
+		}
+	) {
+		...Product
+	}
+}

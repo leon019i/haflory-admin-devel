@@ -1,0 +1,3 @@
+mutation deleteGovernorateTransferPrice($id: ID!) {
+	deleteGovernorateTransferPrice(id: $id)
+}

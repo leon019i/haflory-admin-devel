@@ -1,0 +1,9 @@
+#import "../fragments/user_fragment.graphql"
+query drivers($limit: Int!, $skip: Int!, $name: String) {
+  drivers(input: { limit: $limit, skip: $skip }, name: $name) {
+    user {
+      ...User
+    }
+    totalCount
+  }
+}

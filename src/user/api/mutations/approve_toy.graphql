@@ -1,0 +1,7 @@
+#import "@/products/api/fragments/product_fragment.graphql"
+
+mutation changeApprovalStatus($id: ID!, $approved: Boolean!) {
+	changeApprovalStatus(id: $id, approved: $approved) {
+		...Product
+	}
+}

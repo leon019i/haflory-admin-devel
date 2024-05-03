@@ -1,0 +1,8 @@
+
+fragment Seller on Seller {
+    _id
+    contactPerson
+    contactEmail
+    commission
+}
+

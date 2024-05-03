@@ -1,0 +1,7 @@
+#import "../fragments/product_fragment.graphql"
+
+mutation updateProductFeatured($id: ID!, $featured: Boolean!) {
+	updateProductFeatured(id: $id, featured: $featured) {
+		...Product
+	}
+}

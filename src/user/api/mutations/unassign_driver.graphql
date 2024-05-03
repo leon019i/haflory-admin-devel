@@ -1,0 +1,29 @@
+mutation unAssignDriver($id: ID!) {
+  unAssignDriver(id: $id) {
+    _id
+    personalInformation {
+      name
+      phone
+    }
+    service {
+      nameEn
+      nameAr
+    }
+    subServices {
+      nameEn
+      nameAr
+    }
+    acceptedBy {
+      nameEn
+      nameAr
+    }
+    payment {
+      status
+    }
+
+    price
+    status
+    date
+    time
+  }
+}

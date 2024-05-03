@@ -1,0 +1,41 @@
+fragment Product on Product {
+  _id
+  nameEn
+  nameAr
+  descriptionEn
+  descriptionAr
+  subCategory {
+    _id
+    nameEn
+    nameAr
+    avatar
+    category {
+      _id
+      nameEn
+      nameAr
+      avatar
+    }
+  }
+
+  createdBy {
+    _id
+    nameEn
+    nameAr
+  }
+
+  avatar
+  featured
+  active
+
+  price
+  quantity
+  sku
+  approved
+  variants {
+    _id
+    nameEn
+    nameAr
+    quantity
+  }
+  sizeChart
+}

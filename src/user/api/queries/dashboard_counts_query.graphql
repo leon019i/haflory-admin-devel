@@ -1,0 +1,6 @@
+query dashboardCount {
+  dashboardCount {
+    totalOrder
+    driversCount
+  }
+}

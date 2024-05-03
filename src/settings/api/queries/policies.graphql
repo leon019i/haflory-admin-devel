@@ -1,0 +1,8 @@
+
+query policies  {
+	policies {
+	_id
+     detailsEn
+     detailsAr
+	}
+}

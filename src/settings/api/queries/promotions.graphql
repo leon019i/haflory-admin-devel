@@ -1,0 +1,8 @@
+
+query promotions  {
+	promotions {
+		_id
+		order
+		avatar
+	}
+}

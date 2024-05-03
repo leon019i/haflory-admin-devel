@@ -1,0 +1,7 @@
+mutation createNotification($title: String, $body: String!) {
+  createNotification(title: $title, body: $body) {
+    _id
+    message
+    createdAt
+  }
+}

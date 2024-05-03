@@ -1,0 +1,10 @@
+#import "../fragments/product_fragment.graphql"
+
+query products($limit: Int!, $skip: Int!, $subCategory: ID, $name: String, $userId: ID) {
+	products(input: { limit: $limit, skip: $skip }, subCategory: $subCategory, name: $name , userId: $userId) {
+		products {
+			...Product
+		}
+		totalCount
+	}
+}

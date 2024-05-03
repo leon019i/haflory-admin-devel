@@ -1,0 +1,6 @@
+#import "../fragments/service_fragment.graphql"
+query services {
+	services {
+		...Service
+	}
+}

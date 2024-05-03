@@ -1,0 +1,9 @@
+
+fragment SubService on SubService {
+    _id
+	nameEn
+	nameAr
+	avatar
+	price
+    commission
+}

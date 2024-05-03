@@ -1,0 +1,9 @@
+#import "../fragments/places_fragment.graphql"
+
+
+query governorates {
+	governorates {
+			...Governorate
+		
+	}
+}

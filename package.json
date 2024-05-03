@@ -1,0 +1,46 @@
+{
+	"name": "haflory",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build"
+	},
+	"dependencies": {
+		"core-js": "^3.6.5",
+		"firebase": "^8.0.2",
+		"register-service-worker": "^1.7.1",
+		"vee-validate": "^3.3.7",
+		"vue": "^2.6.11",
+		"vue-apollo": "^3.0.0-beta.11",
+		"vue-avatar": "^2.3.0",
+		"vue-i18n": "^8.18.2",
+		"vue-image-upload-resize": "^2.3.0",
+		"vue-native-notification": "^1.1.1",
+		"vue-notification": "^1.3.20",
+		"vue-router": "^3.2.0",
+		"vue-upload-multiple-image": "^1.1.4",
+		"vuetify": "^2.2.11",
+		"vuex": "^3.4.0"
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-runtime": "^7.24.3",
+		"@vue/cli-plugin-babel": "^4.4.0",
+		"@vue/cli-plugin-pwa": "^4.4.6",
+		"@vue/cli-plugin-router": "^4.4.0",
+		"@vue/cli-plugin-vuex": "^4.4.0",
+		"@vue/cli-service": "^4.4.0",
+		"graphql-tag": "^2.9.0",
+		"sass": "^1.19.0",
+		"sass-loader": "^8.0.0",
+		"vue-cli-plugin-apollo": "^0.22.2",
+		"vue-cli-plugin-vuetify": "^2.0.6",
+		"vue-template-compiler": "^2.6.11",
+		"vuetify-loader": "^1.3.0"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not dead"
+	]
+}

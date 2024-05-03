@@ -1,0 +1,19 @@
+fragment Order on Order {
+	_id
+	  personalInformation{
+        name
+        phone
+      }
+      service{
+        nameEn
+        nameAr
+      }
+      subServices{
+        nameEn
+        nameAr
+      }
+      price
+      status
+      date
+      time
+}

@@ -1,0 +1,9 @@
+#import "../fragments/sub_areas_fragment.graphql"
+
+
+query areas {
+	areas {
+			...Area
+		
+	}
+}

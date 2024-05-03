@@ -1,0 +1,10 @@
+#import "../fragments/product_fragment.graphql"
+
+query pendingApprovalList($limit: Int, $skip: Int) {
+	pendingApprovalList(input: { limit: $limit, skip: $skip }) {
+		products {
+			...Product
+		}
+		totalCount
+	}
+}

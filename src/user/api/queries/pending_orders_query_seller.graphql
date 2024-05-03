@@ -1,0 +1,21 @@
+query pendingOrders($limit: Int!, $skip: Int!) {
+	pendingOrders(input: { limit: $limit, skip: $skip }) {
+		totalCount
+		orders {
+	 personalInformation{
+        name
+        phone
+      }
+      service{
+        nameEn
+        nameAr
+      }
+      acceptedBy{
+        nameEn
+        nameAr
+      }
+      price
+      date
+		}
+	}
+}

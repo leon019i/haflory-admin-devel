@@ -1,0 +1,6 @@
+
+fragment Area  on Area  {
+    _id
+    nameEn
+    nameAr
+}

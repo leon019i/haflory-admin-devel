@@ -1,0 +1,6 @@
+#import "../fragments/orders_fragment.graphql"
+mutation assignDriverToOrder($order: ID!, $driver: ID!) {
+  assignDriverToOrder(order: $order, driver: $driver) {
+    ...Order
+  }
+}

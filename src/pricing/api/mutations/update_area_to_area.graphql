@@ -1,0 +1,35 @@
+
+mutation updateAreaTransferPrice(
+	$id: ID!
+	$from: ID!
+    $to: ID!
+    $price: Float
+    $commission: Float
+  
+) {
+	updateAreaTransferPrice(
+			  id: $id,
+		input: {
+			  from: $from
+	          to: $to
+	          price: $price
+	          commission: $commission
+	         
+		    }
+	) {
+                   _id
+      from{
+        _id
+        nameEn
+        nameAr
+      }
+      to{
+        _id
+        nameEn
+        nameAr
+      }
+      price
+      commission
+			 
+	  }
+}

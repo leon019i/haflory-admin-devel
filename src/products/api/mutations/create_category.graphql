@@ -1,0 +1,7 @@
+
+#import "../fragments/category_fragment.graphql"
+mutation createCategory( $nameEn: String!, $nameAr: String!, $order: Int, $active: Boolean , $avatar: Upload, $subCategories: [SubCategoryInput]) {
+	createCategory( input: { nameEn: $nameEn, nameAr: $nameAr, order: $order, active: $active, avatar: $avatar, subCategories:$subCategories }) {
+		...Category
+	}
+}

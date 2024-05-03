@@ -1,0 +1,9 @@
+
+query paymentSetting  {
+	paymentSetting {
+		_id
+		paymentKey
+		paymentConfigType
+		cod
+	}
+}

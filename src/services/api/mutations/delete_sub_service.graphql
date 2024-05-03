@@ -1,0 +1,3 @@
+mutation deleteSubService($id: ID!) {
+	deleteSubService(id: $id)
+}

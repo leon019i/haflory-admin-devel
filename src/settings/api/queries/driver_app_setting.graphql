@@ -1,0 +1,10 @@
+
+query driverAppConfig  {
+	driverAppConfig {
+	 _id
+    pendingOrders
+    acceptableOrders
+    orderDisplayTime
+    transferLimit
+	}
+}

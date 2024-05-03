@@ -1,0 +1,6 @@
+#import "../fragments/orders_fragment.graphql"
+mutation updateOrderStatus($id: ID!, $status: OrderStatus) {
+	updateOrderStatus(id: $id, status: $status) {
+		...Order
+	}
+}

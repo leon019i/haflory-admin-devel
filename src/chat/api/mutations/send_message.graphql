@@ -1,0 +1,29 @@
+mutation sendMessage(
+  $customer: String!
+  $customerName: String
+  $date: String!
+  $message: MessageInput!
+) {
+  sendMessage(
+    input: {
+      customer: $customer
+      customerName: $customerName
+      date: $date
+      message: $message
+    }
+  ) {
+    _id
+    customer
+    customerName
+    date
+    message {
+      _id
+      from
+      to
+      date
+      time
+      content
+      read
+    }
+  }
+}

@@ -1,0 +1,44 @@
+fragment Order on Order {
+  _id
+  personalInformation {
+    name
+    phone
+  }
+  service {
+    nameEn
+    nameAr
+  }
+  subServices {
+    nameEn
+    nameAr
+    quantity
+  }
+  fromAddress {
+    area {
+      nameEn
+      nameAr
+    }
+  }
+  toAddress {
+    area {
+      nameEn
+      nameAr
+    }
+  }
+  acceptedBy {
+    nameEn
+    nameAr
+    phone
+  }
+  payment {
+    status
+    paymentType
+  }
+  commission
+  numberOfTransfer
+  orderType
+  price
+  status
+  date
+  time
+}

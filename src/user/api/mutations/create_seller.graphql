@@ -1,0 +1,14 @@
+#import "../fragments/user_fragment.graphql"
+mutation createDriver(
+	 $nameEn: String!,$nameAr: String!, $email: String, $password: String!, $phone: String!, $avatar: Upload, $active: Boolean 
+) {
+	createDriver(
+		input: {
+			 nameEn: $nameEn, nameAr: $nameAr, email: $email, password: $password, phone: $phone, avatar: $avatar,active :$active
+		}
+	) {
+		
+			...User
+		
+	}
+}

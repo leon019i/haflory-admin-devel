@@ -1,0 +1,20 @@
+query getAreaPriceList($limit: Int!, $skip: Int!) {
+	getAreaPriceList(input: { limit: $limit, skip: $skip }) {
+   areaPrice{
+      _id
+      from{
+        _id
+        nameEn
+        nameAr
+      }
+      to{
+        _id
+        nameEn
+        nameAr
+      }
+      price
+      commission
+    }
+		totalCount
+	}
+}

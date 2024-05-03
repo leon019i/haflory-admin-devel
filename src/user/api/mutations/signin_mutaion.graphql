@@ -1,0 +1,9 @@
+#import "../fragments/user_fragment.graphql"
+mutation userSignIn($phone: String!, $password: String!) {
+	userSignIn(input: { phone: $phone, password: $password }) {
+		user {
+			...User
+		}
+		token
+	}
+}

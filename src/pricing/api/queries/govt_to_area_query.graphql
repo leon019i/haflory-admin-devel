@@ -1,0 +1,20 @@
+query getGovernorateAreaPriceList($limit: Int!, $skip: Int!) {
+  getGovernorateAreaPriceList(input: { limit: $limit, skip: $skip }) {
+    governorateAreaPrice {
+      _id
+      governorate {
+        _id
+        nameEn
+        nameAr
+      }
+      area {
+        _id
+        nameEn
+        nameAr
+      }
+      price
+      commission
+    }
+    totalCount
+  }
+}

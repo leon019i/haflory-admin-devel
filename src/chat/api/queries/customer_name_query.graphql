@@ -1,0 +1,10 @@
+query getChatCustomer {
+  getChatCustomer {
+    customer
+    customerName
+    lastDate
+    adminRead
+    customerRead
+    adminUnreadMessageCount
+  }
+}

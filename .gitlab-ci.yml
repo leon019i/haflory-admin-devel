@@ -1,0 +1,38 @@
+stages:
+  - build
+  - deploy
+
+build_web_dev:  
+  stage: build  
+  image: node:12.16.2
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+    - node_modules/
+  before_script:
+    - npm install -g @vue/cli     
+    - npm install
+    - node -v
+    - vue --version
+  script:    
+    - npm run build  
+  artifacts:    
+    paths:          
+      - dist/    
+    expire_in: 1 hour
+  only:
+    - devel
+  when: manual
+
+
+deploy_web_dev:   
+  stage: deploy  
+  image: python:latest 
+  script:    
+    - pip install awscli
+    - aws configure set region me-south-1
+    - aws s3 rm s3://admin.haflory --recursive
+    - aws s3 sync ./dist s3://admin.haflory
+  only:
+    - devel
+  when: manual

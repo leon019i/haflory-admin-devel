@@ -1,0 +1,17 @@
+#import "../fragments/places_fragment.graphql"
+mutation createGovernorate(
+	$nameEn: String
+    $nameAr: String
+    $areas: [AreaInput]
+) {
+	createGovernorate(
+		input: {
+			  nameEn: $nameEn
+	          nameAr: $nameAr
+	          areas: $areas
+		}
+	) {
+                 ...Governorate
+			 
+	}
+}

@@ -1,0 +1,12 @@
+query adminContacts {
+  adminContacts {
+    _id
+    email
+    phone
+    whatsapp
+    instagram
+    facebook
+    androidLink
+    iosLink
+  }
+}

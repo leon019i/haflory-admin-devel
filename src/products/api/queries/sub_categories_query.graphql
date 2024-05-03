@@ -1,0 +1,7 @@
+#import "../fragments/sub_category_fragment.graphql"
+
+query subCategories {
+	subCategories {
+		...SubCategory
+	}
+}

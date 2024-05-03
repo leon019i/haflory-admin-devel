@@ -1,0 +1,20 @@
+mutation updateDriverConfigApp(
+$pendingOrders: Int
+$acceptableOrders: Int
+$orderDisplayTime: String
+$transferLimit: Int
+ ) {
+	updateDriverConfigApp(
+	 input: { 
+	 pendingOrders: $pendingOrders
+	 acceptableOrders: $acceptableOrders
+	 orderDisplayTime: $orderDisplayTime
+	 transferLimit: $transferLimit
+	 }) {
+		  _id
+          pendingOrders
+          acceptableOrders
+          orderDisplayTime
+          transferLimit
+	}
+}

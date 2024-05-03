@@ -1,0 +1,10 @@
+mutation markAsRead($customer: ID!) {
+  markAsRead(customer: $customer) {
+    customer
+    customerName
+    lastDate
+    adminRead
+    customerRead
+    adminUnreadMessageCount
+  }
+}

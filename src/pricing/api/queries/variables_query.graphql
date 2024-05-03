@@ -1,0 +1,8 @@
+
+query getPriceVariable  {
+	getPriceVariable {
+	   _id
+    floorLimit
+    floorPrice
+	}
+}

@@ -1,0 +1,16 @@
+mutation updateVariables(
+$floorLimit: Int
+$floorPrice: Float
+
+ ) {
+	updateVariables(
+	 input: { 
+	 floorLimit: $floorLimit
+	 floorPrice: $floorPrice
+
+	 }) {
+		   _id
+    floorLimit
+    floorPrice
+	}
+}

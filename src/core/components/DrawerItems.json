@@ -1,0 +1,88 @@
+[
+	{
+		"id": 1,
+		"name": "Dashboard",
+		"name_ar": "لوحة القيادة",
+		"icon": "mdi-speedometer",
+		"to": ""
+	},
+	{
+		"id": 2,
+		"name": "Orders",
+		"name_ar": "طلبات",
+		"icon": "mdi-clipboard-check",
+		"to": "orders"
+	},
+	{
+		"id": 3,
+		"name": "Payments",
+		"name_ar": "المدفوعات",
+		"icon": "mdi-credit-card",
+		"to": "payments"
+	},
+	{
+		"divider": true
+	},
+	{
+		"id": 5,
+		"name": "Services",
+		"name_ar": "خدمات",
+		"icon": "mdi-truck",
+		"to": "services"
+	},
+	{
+		"id": 5,
+		"name": "Settings",
+		"name_ar": "الإعدادات",
+		"icon": "mdi-cog",
+		"to": "settings"
+	},
+	{
+		"id": 7,
+		"name": "Drivers",
+		"name_ar": "السائقين",
+		"icon": "mdi-account",
+		"to": "drivers"
+	},
+	{
+		"id": 8,
+		"name": "Places ",
+		"name_ar": "أماكن ",
+		"icon": "mdi-map-marker",
+		"to": "places"
+	},
+	{
+		"id": 9,
+		"name": "Pricing",
+		"name_ar": "التسعير",
+		"icon": "mdi-plus-box-multiple",
+		"to": "pricing"
+	},
+	{
+		"divider": true
+	},
+	{
+		"id": 11,
+		"name": "Accounts  ",
+		"name_ar": "حسابات  ",
+		"icon": "mdi-cash-usd-outline",
+		"to": "accounts"
+	},
+	{
+		"divider": true
+	},
+	{
+		"id": 13,
+		"name": "Chats  ",
+		"name_ar": "القطط  ",
+		"icon": "mdi-message-text",
+		"to": "chats"
+	},
+	{
+		"id": 14,
+		"name": "Push notification",
+		"name_ar": "دفع الإخطار",
+		"icon": "mdi-bell",
+		"to": "notification"
+	}
+]

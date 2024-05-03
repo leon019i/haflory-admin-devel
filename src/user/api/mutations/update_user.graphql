@@ -1,0 +1,12 @@
+#import "../fragments/user_fragment.graphql"
+mutation updateUser($id: ID!, $nameEn: String!,$nameAr: String!, $email: String, $phone: String, $avatar: Upload
+# , $active: Boolean
+) {
+	updateUser(id: $id, input: { nameEn: $nameEn,nameAr: $nameAr, email: $email, phone: $phone, avatar: $avatar,
+	
+	#  active: $active 
+	 
+	 }) {
+		...User
+	}
+}

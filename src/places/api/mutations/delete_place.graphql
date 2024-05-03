@@ -1,0 +1,3 @@
+mutation deleteGovernorate($id: ID!) {
+	deleteGovernorate(id: $id)
+}

@@ -1,0 +1,28 @@
+fragment paymentOrder on paymentOrder {
+  _id
+  createdBy {
+    _id
+    nameEn
+    nameAr
+  }
+  orders {
+    service {
+      nameEn
+      nameAr
+    }
+  }
+  paymentType
+  invoiceReference {
+    track
+    payment
+    gateway
+    acquirer
+    transaction
+    order
+  }
+  invoiceCustomer {
+    first_name
+  }
+  invoiceAmount
+  status
+}

@@ -1,0 +1,9 @@
+#import "../fragments/sub_areas_fragment.graphql"
+fragment Governorate  on Governorate  {
+    _id
+    nameEn
+    nameAr
+    areas {
+				 ...Area
+         }
+}

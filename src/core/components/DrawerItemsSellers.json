@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"name": "Dashboard",
+		"name_ar": "لوحة القيادة",
+		"icon": "mdi-speedometer",
+		"to": ""
+	},
+	{
+		"id": 2,
+		"name": "Products",
+		"name_ar": "منتجات",
+		"icon": "mdi-tshirt-crew",
+		"to": "products"
+	},
+	{
+		"id": 8,
+		"name": "Orders",
+		"name_ar": "الطلب #٪ s",
+		"icon": "mdi-truck",
+		"to": "orders"
+	},
+	{
+		"id": 10,
+		"name": "Accounts  ",
+		"name_ar": "حسابات  ",
+		"icon": "mdi-cash-usd-outline",
+		"to": "accounts"
+	}
+]

@@ -1,0 +1,6 @@
+#import "../fragments/payment_fragment.graphql"
+mutation clearPayment($user: ID!) {
+  clearPayment(user: $user) {
+    ...Account
+  }
+}

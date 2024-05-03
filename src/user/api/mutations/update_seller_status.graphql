@@ -1,0 +1,10 @@
+#import "../fragments/seller_fragment.graphql"
+#import "../fragments/user_fragment.graphql"
+mutation updateSellerStatus($id: ID!, $status: Boolean!) {
+	updateSellerStatus(id: $id, status: $status) {
+		...Seller
+		user {
+			...User
+		}
+	}
+}

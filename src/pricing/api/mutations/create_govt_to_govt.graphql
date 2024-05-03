@@ -1,0 +1,35 @@
+mutation createGovernorateTransferPrice(
+
+	$from: ID!
+    $to: ID!
+    $price: Float
+    $commission: Float
+) {
+	createGovernorateTransferPrice(
+
+		input: {
+			  from: $from
+	          to: $to
+	          price: $price
+	          commission: $commission
+		}
+	) {
+              
+      _id
+      from{
+        _id
+        nameEn
+        nameAr
+      }
+      to{
+        _id
+        nameEn
+        nameAr
+      }
+      price
+      commission
+    
+	
+			 
+	}
+}

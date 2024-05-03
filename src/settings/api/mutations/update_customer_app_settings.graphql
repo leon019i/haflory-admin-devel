@@ -1,0 +1,16 @@
+mutation updateUserConfigApp(
+$orderLimit: Int
+$openingHour: String
+$closingHour: String
+ ) {
+	updateUserConfigApp( input: { 
+	 orderLimit: $orderLimit
+	 openingHour: $openingHour
+	 closingHour: $closingHour
+	 }) {
+	  _id
+    orderLimit
+    openingHour
+    closingHour
+	}
+}

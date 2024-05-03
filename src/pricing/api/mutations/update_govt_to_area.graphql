@@ -1,0 +1,26 @@
+mutation updateGovernorateAreaTransferPrice(
+  $id: ID!
+  $from: ID!
+  $to: ID!
+  $price: Float
+  $commission: Float
+) {
+  updateGovernorateAreaTransferPrice(
+    id: $id
+    input: { from: $from, to: $to, price: $price, commission: $commission }
+  ) {
+    _id
+    governorate {
+      _id
+      nameEn
+      nameAr
+    }
+    area {
+      _id
+      nameEn
+      nameAr
+    }
+    price
+    commission
+  }
+}

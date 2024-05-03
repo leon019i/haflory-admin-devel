@@ -1,0 +1,9 @@
+#import "../fragments/payment_fragment.graphql"
+query payments($limit: Int!, $skip: Int!, $transactionId: String, $status: String) {
+	payments(input: { limit: $limit, skip: $skip },transactionId:$transactionId,status:$status) {
+		payments {
+			...paymentOrder
+		}
+		totalCount
+	}
+}

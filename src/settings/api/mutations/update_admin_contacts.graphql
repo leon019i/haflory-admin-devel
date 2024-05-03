@@ -1,0 +1,30 @@
+mutation updateAdminContacts(
+  $email: String
+  $phone: String
+  $whatsapp: String
+  $instagram: String
+  $facebook: String
+  $androidLink: String
+  $iosLink: String
+) {
+  updateAdminContacts(
+    input: {
+      email: $email
+      phone: $phone
+      whatsapp: $whatsapp
+      instagram: $instagram
+      facebook: $facebook
+      androidLink: $androidLink
+      iosLink: $iosLink
+    }
+  ) {
+    _id
+    email
+    phone
+    whatsapp
+    instagram
+    facebook
+    androidLink
+    iosLink
+  }
+}

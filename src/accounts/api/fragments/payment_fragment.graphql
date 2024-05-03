@@ -1,0 +1,10 @@
+#import "../fragments/user_fragment.graphql"
+fragment Account on Account {
+       _id
+       user{
+         ...User
+      }
+      paidAmount
+      totalAmount
+      totalCommission
+}

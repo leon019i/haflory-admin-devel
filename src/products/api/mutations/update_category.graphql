@@ -1,0 +1,6 @@
+#import "../fragments/category_fragment.graphql"
+mutation updateCategory($id: ID!, $nameEn: String!, $nameAr: String!, $order: Int, $active: Boolean , $avatar: Upload, $subCategories: [SubCategoryInput]) {
+	updateCategory(id: $id, input: { nameEn: $nameEn, nameAr: $nameAr, order: $order, active: $active, avatar:$avatar, subCategories:$subCategories }) {
+		...Category
+	}
+}

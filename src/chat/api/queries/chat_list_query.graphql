@@ -1,0 +1,19 @@
+query chatList($limit: Int, $skip: Int, $customer: String) {
+  chatList(input: { limit: $limit, skip: $skip }, customer: $customer) {
+    chats {
+      _id
+      customer
+      customerName
+      date
+      messages {
+        _id
+        from
+        to
+        date
+        time
+        content
+        read
+      }
+    }
+  }
+}

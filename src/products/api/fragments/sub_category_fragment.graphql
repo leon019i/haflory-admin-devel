@@ -1,0 +1,11 @@
+#import "../fragments/category_fragment.graphql"
+
+fragment SubCategory on SubCategory {
+	_id
+	nameEn
+	nameAr
+	avatar
+	category{
+	  ...Category
+	}
+}

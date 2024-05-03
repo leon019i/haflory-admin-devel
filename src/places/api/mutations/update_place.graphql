@@ -1,0 +1,19 @@
+#import "../fragments/places_fragment.graphql"
+mutation updateGovernorate(
+	$id: ID!
+	$nameEn: String
+    $nameAr: String
+    $areas: [AreaInput]
+) {
+	updateGovernorate(
+			  id: $id,
+		input: {
+			  nameEn: $nameEn
+	          nameAr: $nameAr
+	          areas: $areas
+		    }
+	) {
+                 ...Governorate
+			 
+	  }
+}

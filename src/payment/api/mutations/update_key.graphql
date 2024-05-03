@@ -1,0 +1,16 @@
+mutation updatePaymentKey($id: ID!, 
+$paymentConfigType: PaymentConfigType
+$paymentKey: String
+$cod: Boolean
+ ) {
+	updatePaymentKey(id: $id, input: { 
+	 paymentConfigType: $paymentConfigType
+	 paymentKey: $paymentKey
+	 cod: $cod
+	 }) {
+		_id
+		paymentKey
+		paymentConfigType
+		cod
+	}
+}

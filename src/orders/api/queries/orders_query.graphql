@@ -1,0 +1,22 @@
+#import "../fragments/orders_fragment.graphql"
+query orders(
+  $limit: Int!
+  $skip: Int!
+  $status: OrderStatus
+  $phone: String
+  $fromDate: String
+  $toDate: String
+) {
+  orders(
+    input: { limit: $limit, skip: $skip }
+    status: $status
+    phone: $phone
+    fromDate: $fromDate
+    toDate: $toDate
+  ) {
+    orders {
+      ...Order
+    }
+    totalCount
+  }
+}

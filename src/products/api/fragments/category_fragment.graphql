@@ -1,0 +1,16 @@
+
+fragment Category on Category {
+	_id
+	nameEn
+	nameAr
+	active
+	order
+	avatar
+	active
+	subCategories{
+		_id
+		nameEn
+		nameAr
+		avatar
+	}
+}
